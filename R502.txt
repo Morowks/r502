@@ -1,10 +1,3 @@
-#
-# Author: TuEye
-#
-# IMPORTANT
-#
-# Please set jail.local's permission to 640 because it contains your OS API key.
-#
 # This action depends on curl.
 #
 
@@ -55,19 +48,19 @@ actionunban = curl -k -s -XPOST -d '{"address":"<ip>"}' -H "Content-Type: applic
 # Option: oskey
 # Notes.: The api key which you generated in the OPNsense
 # Usage.: use in jail config:  banaction = opnsense-alias[oskey=""]
-oskey =
+oskey =78wIYEstaxqrfiifvX+ZcqILiyWUYN2Vsv2I8BQDt3/6FJt4sv2lU/jQ4ClFMFnX68ecTRGkLfo+TPuT
 
 # Option: ossecret
 # Notes.: The api key which you generated in the OPNsense
 # Usage.: use in jail config:  banaction = opnsense-alias[ossecret=""]
-ossecret =
+ossecret =S/+WgK1JpcE8EykYCduLbvBPHv5Gc3KK2j6z9GJBCTlLFnfAgjz2wI5OUbJEvhs6EAbSVtBy+u3tXgwr
 
 # Option: osaddress
 # Notes.: The address to your OPNsense eg.: 192.168.1.1:443
 # Usage.: use in jail config:  banaction = opnsense-alias[osaddress=""]
-osaddress = 
+osaddress =192.168.56.110:8080
 
 # Option: osalias
 # Notes.: The name of the exisiting alias to which the banned IP should be added
 # Usage.: use in jail config:  banaction = opnsense-alias[osalias=""]
-osalias = 
+osalias =jail2ban 
